@@ -9,17 +9,25 @@ const Hero = () => {
     const TEXTS = ['Your Love, Our Motion Artistry', 'Wedding Invitations', 'Anniversary Invitations', 'Birthday Invitations'];
 
     const [index, setIndex] = useState(0)
-    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
+    const [screenWidth, setScreenWidth] = useState(0);
     useEffect(() => {
         const handleResize = () => {
             setScreenWidth(window.innerWidth);
         };
 
-        window.addEventListener('resize', handleResize);
+        // Check if window object is available (client-side)
+        if (typeof window !== 'undefined') {
+            // Set initial screenWidth value on the client-side
+            setScreenWidth(window.innerWidth);
+            // Attach event listener for window resize
+            window.addEventListener('resize', handleResize);
+        }
 
+        // Clean up the event listener on component unmount
         return () => {
-            window.removeEventListener('resize', handleResize);
+            if (typeof window !== 'undefined') {
+                window.removeEventListener('resize', handleResize);
+            }
         };
     }, []);
 
