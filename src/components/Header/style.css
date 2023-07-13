@@ -1,0 +1,71 @@
+.box {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .box .navbar-wrapper {
+    border: 0px none;
+    height: 30px;
+    overflow-x: hidden;
+    position: relative;
+    width: 571px;
+  }
+  
+  .box .navbar {
+    height: 30px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 579px;
+  }
+  
+  .box .text-wrapper {
+    color: #cf0a2d;
+    font-family: "Jua-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .box .div {
+    color: #ffffff;
+    font-family: "Jua-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 296px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .box .text-wrapper-2 {
+    color: #ffffff;
+    font-family: "Jua-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 390px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .box .text-wrapper-3 {
+    color: #ffffff;
+    font-family: "Jua-Regular", Helvetica;
+    font-size: 24px;
+    font-weight: 400;
+    left: 484px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
