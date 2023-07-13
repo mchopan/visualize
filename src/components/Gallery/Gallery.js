@@ -6,19 +6,19 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 const Images = [
-    "/gallery/Comp 1_exported_7616.jpg",
-    "/gallery/Eligent Orange Wedding Invitation_exported_13850.jpg",
-    "/gallery/Eligent Orange Wedding Invitation_exported_37866.jpg",
-    "/gallery/eligent pink royal blue_exported_12766.jpg",
-    "/gallery/eligent pink royal blue_exported_57083.jpg",
-    "/gallery/Forest Green Wedding Invitation_exported_7016.jpg",
-    "/gallery/Forest Green Wedding Invitation_exported_21300.jpg",
-    "/gallery/medium purple wedding invitation_exported_13750.jpg",
-    "/gallery/medium purple wedding invitation_exported_26283.jpg",
-    "/gallery/Royal Dark Blue Wedding Invitation_exported_7500.jpg",
-    "/gallery/Royal Dark Blue Wedding Invitation_exported_20800.jpg",
-    "/gallery/Royal Dark Blue Wedding Invitation_exported_31750.jpg",
-    "/gallery/Wedding Invitation trailer_exported_4683.jpg"
+    // "/gallery/Comp 1_exported_7616.jpg",
+    "/gallery/Eligent Orange Wedding Invitation_exported_13850.webp",
+    "/gallery/Eligent Orange Wedding Invitation_exported_37866.webp",
+    "/gallery/eligent pink royal blue_exported_12766.webp",
+    "/gallery/eligent pink royal blue_exported_57083.webp",
+    "/gallery/Forest Green Wedding Invitation_exported_7016.webp",
+    "/gallery/Forest Green Wedding Invitation_exported_21300.webp",
+    "/gallery/medium purple wedding invitation_exported_13750.webp",
+    "/gallery/medium purple wedding invitation_exported_26283.webp",
+    "/gallery/Royal Dark Blue Wedding Invitation_exported_7500.webp",
+    // "/gallery/Royal Dark Blue Wedding Invitation_exported_20800.jpg",
+    // "/gallery/Royal Dark Blue Wedding Invitation_exported_31750.jpg",
+    // "/gallery/Wedding Invitation trailer_exported_4683.jpg"
 ];
 
 const Gallery = () => {
