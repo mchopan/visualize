@@ -6,12 +6,14 @@ import Testimonials from '@/components/Testimonials/Testimonials'
 import Contact from '@/components/Contact/Contact'
 import Services from '@/components/Services/Services'
 import Footer from '@/components/Footer/Footer'
+import { Toaster } from 'react-hot-toast'
 
 export default function Home() {
   return (
     <>
 
       <main>
+        <Toaster />
         <Header />
         <Hero />
         <Gallery />

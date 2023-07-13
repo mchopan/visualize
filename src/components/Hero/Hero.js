@@ -44,7 +44,7 @@ const Hero = () => {
             display: "flex",
             margin: "80px 20px",
             flexDirection: { xs: "column-reverse", md: "row" },
-            gap: "10px"
+            gap: "20px"
         }}>
             <Box sx={{
                 overflow: "hidden",
@@ -52,7 +52,9 @@ const Hero = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                backgroundColor: { xs: "none", md: "gray" }
+                // backgroundColor: { xs: "none", md: "gray" },
+                border: "1px solid yellow",
+                borderRadius: "5px"
             }}>
 
                 <Typography
@@ -83,7 +85,6 @@ const Hero = () => {
                     screenWidth >= 400 ? (
                         <Image
                             style={{
-                                zIndex: "99",
                                 borderRadius: "5px",
                                 boxShadow: "rgba(255, 255, 0, 0.25) 0px 54px 55px, rgba(255, 255, 0, 0.12) 0px -12px 30px, rgba(255, 255, 0, 0.12) 0px 4px 6px, rgba(255, 255, 0, 0.17) 0px 12px 13px, rgba(255, 255, 0, 0.09) 0px -3px 5px"
                             }}
@@ -95,7 +96,6 @@ const Hero = () => {
                     ) : (
                         <Image
                             style={{
-                                zIndex: "99",
                                 borderRadius: "5px",
                                 boxShadow: "rgba(255, 255, 0, 0.25) 0px 54px 55px, rgba(255, 255, 0, 0.12) 0px -12px 30px, rgba(255, 255, 0, 0.12) 0px 4px 6px, rgba(255, 255, 0, 0.17) 0px 12px 13px, rgba(255, 255, 0, 0.09) 0px -3px 5px"
                             }}
