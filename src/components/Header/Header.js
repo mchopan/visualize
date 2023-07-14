@@ -1,7 +1,11 @@
+"use client"
 import React from 'react'
-import MenuIcon from '@mui/icons-material/Menu';
-import { AppBar, Box, IconButton, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, Toolbar, Typography, Button } from '@mui/material';
+import { useRouter } from 'next/navigation'
 const Header = () => {
+
+    const router = useRouter()
+
     return (
         <AppBar position="static" sx={{
             backgroundColor: "#fccb06",
@@ -17,33 +21,36 @@ const Header = () => {
                     alignItems: "center",
                 }}>
 
-                    <Typography sx={{ fontFamily: "jua", fontSize: "25px" }} variant="h6" color="inherit" component="div">
+                    <Typography onClick={() => router.push('/')} sx={{ fontFamily: "jua", fontSize: "25px", cursor: "pointer" }} variant="h6" color="inherit" component="div">
                         Visualize Me Design
                     </Typography>
-                    <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-                        <MenuIcon sx={{ display: { xs: "block", md: "none" } }} />
-                    </IconButton>
+                    <Box sx={{ display: "flex", gap: "20px" }}>
+                        <Typography onClick={() => router.push('/')} sx={{ fontFamily: "jua", color: "white", cursor: "pointer" }} variant="h6" color="inherit" component="div">
+                            Home
+                        </Typography>
+                        <Typography onClick={() => router.push('/About')} sx={{ fontFamily: "jua", color: "white", cursor: "pointer" }} variant="h6" component="div">
+                            About
+                        </Typography>
+                    </Box>
                 </Box>
-                <Box sx={{
+                {/* <Box sx={{
                     display: { xs: "none", md: "flex" },
                     gap: "20px"
                 }}>
-                    <Typography sx={{ fontFamily: "jua" }} variant="h6" color="inherit" component="div">
-                        Home
-                    </Typography>
-                    <Typography sx={{ fontFamily: "jua" }} variant="h6" color="inherit" component="div">
-                        About
-                    </Typography>
-                    <Typography sx={{ fontFamily: "jua" }} variant="h6" color="inherit" component="div">
-                        Contact
-                    </Typography>
-                    <Typography sx={{ fontFamily: "jua" }} variant="h6" color="inherit" component="div">
-                        Services
-                    </Typography>
-                </Box>
+                    <Button onClick={() => router.push('/')} variant="text">
+                        <Typography sx={{ fontFamily: "jua", color: "white" }} variant="h6" color="inherit" component="div">
+                            Home
+                        </Typography>
+                    </Button>
+                    <Button onClick={() => router.push('/About')} variant="text">
+                        <Typography sx={{ fontFamily: "jua", color: "white" }} variant="h6" component="div">
+                            About
+                        </Typography>
+                    </Button>
+                </Box> */}
             </Toolbar>
 
-        </AppBar>
+        </AppBar >
     )
 }
 

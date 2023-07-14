@@ -90,6 +90,7 @@ const Contact = () => {
                                 multiline
                                 maxRows={4}
                                 variant="filled"
+                                required
                             />
                             <TextField
                                 sx={{ fontFamily: "jua" }}
@@ -99,6 +100,7 @@ const Contact = () => {
                                 placeholder="you@gmail.com"
                                 multiline
                                 variant="filled"
+                                required
                             />
                             <TextField
                                 sx={{ fontFamily: "jua" }}
@@ -109,6 +111,7 @@ const Contact = () => {
                                 multiline
                                 rows={4}
                                 variant="filled"
+                                required
                             />
                             <Button
                                 disabled={loading}
@@ -138,44 +141,50 @@ const Contact = () => {
                                 justifyContent: "center",
                                 alignItems: "center",
                             }}>
-                                <Typography sx={{
-                                    fontFamily: "jua", color: "white", width: "100%", border: "1px solid yellow",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                    gap: "20px",
-                                    cursor: "pointer",
-                                    padding: "10px"
-                                }} variant="h5">
-                                    <InstagramIcon fontSize="large" />
-                                    @visualize_me_design
-                                </Typography>
+                                <a style={{ minWidth: "100%", maxWidth: "200px" }} href="https://www.instagram.com/mchopan88/" >
+                                    <Typography sx={{
+                                        fontFamily: "jua", color: "white", width: "100%", border: "1px solid yellow",
+                                        display: "flex",
+                                        justifyContent: "space-around",
+                                        alignItems: "center",
+                                        gap: "20px",
+                                        cursor: "pointer",
+                                        padding: "10px"
+                                    }} variant="h5">
+                                        <InstagramIcon fontSize="large" />
+                                        @visualize_me_design
+                                    </Typography>
+                                </a>
 
-                                <Typography sx={{
-                                    fontFamily: "jua", color: "white", width: "100%", border: "1px solid yellow",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                    gap: "20px",
-                                    cursor: "pointer",
-                                    padding: "10px"
-                                }} variant="h5">
-                                    <PinterestIcon fontSize="large" />
-                                    @visualizemedesign
-                                </Typography>
+                                <a style={{ minWidth: "100%", maxWidth: "200px" }} href='https://in.pinterest.com/visualizemedesign/'>
+                                    <Typography sx={{
+                                        fontFamily: "jua", color: "white", width: "100%", border: "1px solid yellow",
+                                        display: "flex",
+                                        justifyContent: "space-around",
+                                        alignItems: "center",
+                                        gap: "20px",
+                                        cursor: "pointer",
+                                        padding: "10px"
+                                    }} variant="h5">
+                                        <PinterestIcon fontSize="large" />
+                                        @visualizemedesign
+                                    </Typography>
+                                </a>
 
-                                <Typography sx={{
-                                    fontFamily: "jua", color: "white", width: "100%", border: "1px solid yellow",
-                                    display: "flex",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                    gap: "20px",
-                                    cursor: "pointer",
-                                    padding: "10px"
-                                }} variant="h5">
-                                    <WhatsAppIcon fontSize="large" />
-                                    +91 9999999999
-                                </Typography>
+                                <a style={{ minWidth: "100%", maxWidth: "200px" }} href="#">
+                                    <Typography sx={{
+                                        fontFamily: "jua", color: "white", width: "100%", border: "1px solid yellow",
+                                        display: "flex",
+                                        justifyContent: "space-around",
+                                        alignItems: "center",
+                                        gap: "20px",
+                                        cursor: "pointer",
+                                        padding: "10px"
+                                    }} variant="h5">
+                                        <WhatsAppIcon fontSize="large" />
+                                        +91 9999999999
+                                    </Typography>
+                                </a>
                             </CardContent>
 
                         </Card>
