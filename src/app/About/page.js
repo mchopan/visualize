@@ -1,7 +1,7 @@
 import { Typography, Box } from '@mui/material'
 import React from 'react'
 
-const AboutPage = () => {
+const page = () => {
     return (
 
         <Box sx={{ margin: "30px", display: "flex", flexDirection: "column", gap: "20px" }}>
@@ -75,4 +75,4 @@ const AboutPage = () => {
     )
 }
 
-export default AboutPage
+export default page
