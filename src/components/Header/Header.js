@@ -28,7 +28,7 @@ const Header = () => {
                         <Typography onClick={() => router.push('/')} sx={{ fontFamily: "jua", color: "white", cursor: "pointer" }} variant="h6" color="inherit" component="div">
                             Home
                         </Typography>
-                        <Typography onClick={() => router.push('/about')} sx={{ fontFamily: "jua", color: "white", cursor: "pointer" }} variant="h6" component="div">
+                        <Typography onClick={() => router.push('/About')} sx={{ fontFamily: "jua", color: "white", cursor: "pointer" }} variant="h6" component="div">
                             About
                         </Typography>
                     </Box>
