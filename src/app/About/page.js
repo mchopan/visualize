@@ -28,7 +28,6 @@ const page = () => {
                 <Typography variant="h6" >
                     Our business began in 2020 amidst the challenges posed by the COVID-19 pandemic. As a freelance designer, I faced difficulties in connecting with people and showcasing my creativity in traditional ways. It was during this time of isolation that the idea of digital wedding and event invitations was born.
                     <br />
-                    <br />
                     Recognizing the need for innovative solutions that would allow couples to celebrate their love while adhering to social distancing guidelines, I set out to create a platform that offered unique, customizable, and convenient options for creating stunning invitations.
                 </Typography>
             </Box>
